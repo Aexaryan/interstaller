@@ -1,0 +1,141 @@
+/* Basic styling for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("photo.jpg"); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex; /* Use flexbox to organize content */
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full viewport height */
+  }
+  
+  /* Styling for the header section */
+  header {
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex; /* Align content in header */
+    justify-content: flex-end;
+    align-items: left;
+    padding-right: 20px;
+  }
+  
+  /* Styling for the footer section */
+  footer {
+    height: 50px;
+    background-color: black;
+    position: fixed; /* Fix footer at the bottom */
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  /* Container for main content */
+  .container {
+    flex: 1; /* Allow container to grow */
+    padding: 20px; /* Add padding around content */
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Responsive styles for larger screens */
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 40px; /* Increase padding for larger screens */
+    }
+  }
+  
+  /* Styling for movie genre information */
+  .movie-gen {
+    text-align: center;
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display genres in a row */
+    justify-content: space-between;
+    color: white;
+  }
+  
+  /* Styling for the summary title */
+  .summary-title {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 251, 0);
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the movie summary content */
+  .movie-summary {
+    text-align: center;
+    flex: 1; /* Allow summary to take available space */
+    padding: 20px;
+    text-align: left;
+    color: white;
+  }
+  
+  /* Styling for the movie description content */
+  .movie-description {
+    flex: 1; /* Allow description to take available space */
+    padding: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: flex; /* Arrange content in a column */
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+    align-items: flex-end; /* Align content to the right */
+    line-height: 1.5; /* Set line height for readability */
+    max-height: 4.5em; /* Limit description height */
+    overflow: hidden; /* Hide overflowing text */
+    word-break: break-all; /* Break words if they exceed container width */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow around the container */
+  }
+  
+  /* Styling for movie actors information */
+  .movie-actors {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(252, 247, 247);
+  }
+  
+  /* Styling for the trailer container */
+  .trailer-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  /* Adjust the size of the video player as needed */
+  .trailer-container iframe {
+    width: 100%;
+    height: 400px;
+  }
+  
+  /* Styling for each genre item */
+  .movie-gen li {
+    margin-right: 10%;
+    padding-left: 50px;
+    argin-bottom: -10px; /* Add 10 pixels of space from the bottom side */
+    color: #fbff00;
+  }
+  
+  /* Styling for the movie name */
+  .movie-name {
+    text-align: center;
+    color: white;
+    margin-right: 0%;
+    font-size: 40px;
+  }
+  
+  /* Styling for the watch button */
+  .watch-btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #ffffff; /* Set color to white */
+  }
+  
